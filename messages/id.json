@@ -1,0 +1,79 @@
+{
+  "Navbar": {
+    "contact": "Kontak Kami"
+  },
+  "HomePage": {
+    "Hero": {
+      "title": "Agensi <wrapper>web</wrapper> Terbaik",
+      "description": "Kami adalah agensi pengembangan website yang berspesialisasi dalam memenuhi kebutuhan generasi baru. Kami menawarkan solusi pengembangan website yang inovatif dan mutakhir untuk membantu klien kami menonjol di era yang serba cepat saat ini.",
+      "caption": "Dipercaya oleh lebih dari seribu orang",
+      "button": "Jadwalkan konsultasi gratis"
+    },
+    "Service": {
+      "title": "Kami tawarkan beragam <wrapper>solusi</wrapper>",
+      "content": {
+        "item_1": {
+          "title": "Desain UI/UX",
+          "description": "Berfokus pada desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) untuk meningkatkan kegunaan dan aksesibilitas produk digital dan aplikasi."
+        },
+        "item_2": {
+          "title": "Desain Grafis",
+          "description": "Membuat elemen visual seperti logo, materi branding, teknik tata letak halaman, brosur, dan materi pemasaran lainnya."
+        },
+        "item_3": {
+          "title": "Desain Website",
+          "description": "Merancang dan mengembangkan website untuk memastikan tampilannya menarik, ramah pengguna, dan fungsional."
+        },
+        "item_4": {
+          "title": "Motion Graphics",
+          "description": "Membuat grafik animasi, video untuk berbagai keperluan termasuk pemasaran dan hiburan, untuk membantu menjual produk atau layanan."
+        }
+      }
+    },
+    "About": {
+      "title": "Kami <wrapper>membuat</wrapper> bisnismu menonjol",
+      "description": "Kami bekerja sama dengan klien untuk mengetahui tujuan mereka, target audiens, kebutuhan unik, dan solusi desain yang praktis.",
+      "content": {
+        "experience": "Tahun pengalaman",
+        "project": "Proyek sukses",
+        "satisfaction": "Tingkat kepuasan klien"
+      }
+    },
+    "Process": {
+      "title": "Proses <wrapper>kerja</wrapper> berkualitas tinggi",
+      "description": "Kami fokus pada komunikasi dan kolaborasi yang efektif dengan klien di setiap tahap, memastikan desain akhir memenuhi tujuan dan harapan mereka.",
+      "description_2": "Penting untuk dicatat bahwa langkah-langkah ini telah disederhanakan, dan proses kerja sebenarnya dapat berbeda tergantung pada tingkat kompleksitas proyek.",
+      "content": {
+        "item_1": {
+          "title": "Gagasan proyek",
+          "description": "Proses dimulai dengan diskusi mendetail dengan klien untuk memahami ide dan tujuan mereka."
+        },
+        "item_2": {
+          "title": "Brainstorming",
+          "description": "Proses dimulai dengan diskusi mendetail dengan klien untuk memahami ide dan tujuan mereka."
+        },
+        "item_3": {
+          "title": "Peluncuran",
+          "description": "Proses dimulai dengan diskusi mendetail dengan klien untuk memahami ide dan tujuan mereka."
+        }
+      }
+    }
+  },
+  "Footer": {
+    "title": "Mari <wrapper>mulai</wrapper> project bersama",
+    "description": "Kami bekerja sama dengan klien untuk memahami tujuan, target audiens, dan kebutuhan unik mereka. Kami menggunakan keterampilan kreatif kami untuk menerjemahkan kebutuhan ini menjadi solusi desain yang praktis.",
+    "contact": {
+      "telephone": "Telepon kami:",
+      "email": "Kirimi kami email:"
+    },
+    "form": {
+      "title": "Kirim pesan kepada kami",
+      "name": "Nama",
+      "email": "Email",
+      "telephone": "Nomor Telepon",
+      "button": "Kirim Pesan"
+    },
+    "copyright": "© Hak Cipta 2024, Semua Hak Dilindungi oleh Zenith",
+    "marquee": "Ciptakan pengalaman baru"
+  }
+}

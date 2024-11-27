@@ -1,0 +1,79 @@
+{
+  "Navbar": {
+    "contact": "Contact Us"
+  },
+  "HomePage": {
+    "Hero": {
+      "title": "A <wrapper>website</wrapper> dev agency",
+      "description": "We're a website development agency specializing in meeting the needs of the new generation. We offer innovative and cutting-edge web development solutions to help our clients stand out in today's fast-paced.",
+      "caption": "Believed by more than a thousand people",
+      "button": "Book a free consultation"
+    },
+    "Service": {
+      "title": "We provide website development <wrapper>solutions</wrapper>",
+      "content": {
+        "item_1": {
+          "title": "UI/UX Design",
+          "description": "Focusing on user interface (UI) and user experience (UX) design to enhance the usability and accessibility of digital products & app."
+        },
+        "item_2": {
+          "title": "Graphic Design",
+          "description": "Creating visual elements such as logos, branding materials, page layout techniques, brochures, & other marketing collateral."
+        },
+        "item_3": {
+          "title": "Web Design",
+          "description": "Designing and developing websites to ensure they are visually look and appealing, user-friendly, and functional your website."
+        },
+        "item_4": {
+          "title": "Motion Graphics",
+          "description": "Creating animated graphics, videos for various purposes, including marketing and entertainment. To help sell a product or service."
+        }
+      }
+    },
+    "About": {
+      "title": "We make <wrapper>your</wrapper> business stand out",
+      "description": "We work closely with our clients to know their objectives, target audience, unique needs, and practical design solutions.",
+      "content": {
+        "experience": "Years of experience",
+        "project": "Successful projects",
+        "satisfaction": "Client satisfaction rate"
+      }
+    },
+    "Process": {
+      "title": "Our <wrapper>high-quality</wrapper> working processes",
+      "description": "We focus at every stage on effective communication and collaboration between the client and ensuring that the final design meets the client's objectives and expectations.",
+      "description_2": "It is important to note that these are simplified steps, and the actual work process may vary depending on the complexity of the project.",
+      "content": {
+        "item_1": {
+          "title": "Project idea",
+          "description": "The process starts with a detailed discussion with the client to understand their idea & goals."
+        },
+        "item_2": {
+          "title": "Brainstorming",
+          "description": "The process starts with a detailed discussion with the client to understand their idea & goals."
+        },
+        "item_3": {
+          "title": "Launch",
+          "description": "The process starts with a detailed discussion with the client to understand their idea & goals."
+        }
+      }
+    }
+  },
+  "Footer": {
+    "title": "Let's start <wrapper>a</wrapper> project together",
+    "description": "We work closely with our clients to understand their objectives, target audience, and unique needs. We use our creative skills to translate these requirements and practical design solutions.",
+    "contact": {
+      "telephone": "Give us a call:",
+      "email": "Send us an email:"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Your name",
+      "email": "Your email address",
+      "telephone": "Your phone number",
+      "button": "Send message"
+    },
+    "copyright": "© Copyright 2024, All Rights Reserved by Zenith",
+    "marquee": "Let's create new experiences"
+  }
+}
