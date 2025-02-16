@@ -20,7 +20,7 @@ export default async function Home() {
         <hr />
       </div>
       <About settings={settings?.data || {}} />
-      {/* <Process /> */}
+      <Process />
     </>
   );
 }
