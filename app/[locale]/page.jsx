@@ -19,8 +19,8 @@ export default async function Home() {
       <div className="container">
         <hr />
       </div>
-      <About settings={settings?.data || {}}/>
-      <Process />
+      <About settings={settings?.data || {}} />
+      {/* <Process /> */}
     </>
   );
 }
