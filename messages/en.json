@@ -4,13 +4,13 @@
   },
   "HomePage": {
     "Hero": {
-      "title": "A <wrapper>website</wrapper> dev agency",
-      "description": "We're a website development agency specializing in meeting the needs of the new generation. We offer innovative and cutting-edge web development solutions to help our clients stand out in today's fast-paced.",
+      "title": "A <wrapper>software</wrapper> dev agency",
+      "description": "We're a software development agency specializing in meeting the needs of the new generation. We offer innovative and cutting-edge software development solutions to help our clients stand out in today's fast-paced.",
       "caption": "Believed by more than a thousand people",
       "button": "Book a free consultation"
     },
     "Service": {
-      "title": "We provide website development <wrapper>solutions</wrapper>",
+      "title": "We provide software development <wrapper>solutions</wrapper>",
       "content": {
         "item_1": {
           "title": "UI/UX Design",
@@ -21,8 +21,8 @@
           "description": "Creating visual elements such as logos, branding materials, page layout techniques, brochures, & other marketing collateral."
         },
         "item_3": {
-          "title": "Web Design",
-          "description": "Designing and developing websites to ensure they are visually look and appealing, user-friendly, and functional your website."
+          "title": "Mobile Apps & Web Design",
+          "description": "Designing and developing mobile apps and web to ensure they are visually look and appealing, user-friendly, and functional your apps."
         },
         "item_4": {
           "title": "Motion Graphics",
@@ -73,7 +73,7 @@
       "telephone": "Your phone number",
       "button": "Send message"
     },
-    "copyright": "© Copyright 2024, All Rights Reserved by Zenith",
+    "copyright": "© Copyright 2025, All Rights Reserved by Mifta Digital Solution",
     "marquee": "Let's create new experiences"
   }
 }

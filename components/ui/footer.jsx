@@ -195,7 +195,7 @@ export default function Footer({ settings }) {
           <div className="container py-9">
             <div className="flex justify-between text-secondary">
               <Link href={"/"} className="font-bold text-2xl">
-                Zenith
+                Mifta Digital Solution
               </Link>
               <p>{t("copyright")}</p>
             </div>

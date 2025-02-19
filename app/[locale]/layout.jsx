@@ -6,7 +6,7 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,8 +26,9 @@ const syne = Syne({
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   return {
-    title: "Zenith",
-    description: locale === "en" ? "A website dev agency" : "Agen web terbaik",
+    title: "Mifta Digital Solution",
+    description:
+      locale === "en" ? "A software dev agency" : "Agen software terbaik",
     openGraph: { images: ["/metadata-image.png"] },
   };
 }
@@ -59,7 +60,7 @@ export default async function RootLayout({ children, params }) {
           {children}
           <Footer settings={settings?.data || {}} />
 
-          <Toaster/>
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

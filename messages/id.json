@@ -4,8 +4,8 @@
   },
   "HomePage": {
     "Hero": {
-      "title": "Agensi <wrapper>web</wrapper> Terbaik",
-      "description": "Kami adalah agensi pengembangan website yang berspesialisasi dalam memenuhi kebutuhan generasi baru. Kami menawarkan solusi pengembangan website yang inovatif dan mutakhir untuk membantu klien kami menonjol di era yang serba cepat saat ini.",
+      "title": "Agensi <wrapper>software</wrapper> Terbaik",
+      "description": "Kami adalah agensi pengembangan software yang berspesialisasi dalam memenuhi kebutuhan generasi baru. Kami menawarkan solusi pengembangan software yang inovatif dan mutakhir untuk membantu klien kami menonjol di era yang serba cepat saat ini.",
       "caption": "Dipercaya oleh lebih dari seribu orang",
       "button": "Jadwalkan konsultasi gratis"
     },
@@ -73,7 +73,7 @@
       "telephone": "Nomor Telepon",
       "button": "Kirim Pesan"
     },
-    "copyright": "© Hak Cipta 2024, Semua Hak Dilindungi oleh Zenith",
+    "copyright": "© Hak Cipta 2025, Semua Hak Dilindungi oleh Mifta Digital Solution",
     "marquee": "Ciptakan pengalaman baru"
   }
 }
