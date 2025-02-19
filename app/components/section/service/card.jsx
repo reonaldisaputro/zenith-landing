@@ -16,7 +16,7 @@ export default function ServiceCard({ src, title, description }) {
         <p className="mb-7">{description}</p>
         <a className="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5">
           <Image
-            src="/icon-black-arrow-right.svg"
+            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-black-arrow-right.svg`}
             alt="icon-black-arrow-right"
             width="34"
             height="28"

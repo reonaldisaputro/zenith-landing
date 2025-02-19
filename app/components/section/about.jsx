@@ -44,7 +44,7 @@ export default function About({ settings }) {
       return "/about-img.jpg";
     const url = new URL(settings.video_url);
     if (settings.video_url.startsWith("https://www.youtube.com/embed")) {
-      const idVideo = url.pathname.replace("/embed/", '');
+      const idVideo = url.pathname.replace("/embed/", "");
       return `https://img.youtube.com/vi/${idVideo}/maxresdefault.jpg`;
     }
     if (settings.video_url.includes("/watch")) {
@@ -65,7 +65,7 @@ export default function About({ settings }) {
                     <span>
                       {chunks}{" "}
                       <Image
-                        src="/shape-light-lime-5-arms-star.svg"
+                        src={`${process.env.NEXT_PUBLIC_SITE_URL}/shape-light-lime-5-arms-star.svg`}
                         alt="shape-light-lime-5-arms-star"
                         width="74"
                         height="70"

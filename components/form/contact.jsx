@@ -65,8 +65,8 @@ export default function ContactForm({ baseUrl }) {
       if (!response.ok) throw await response.json();
 
       toast({
-        title: 'Success',
-        description: 'Success send message'
+        title: "Success",
+        description: "Success send message",
       });
     } catch (error) {
       if (error.meta?.messages?.[0]) {
@@ -84,7 +84,7 @@ export default function ContactForm({ baseUrl }) {
             message: error.meta.validations[key][0],
           });
         });
-        return
+        return;
       }
 
       toast({
@@ -171,7 +171,7 @@ export default function ContactForm({ baseUrl }) {
             {t("form.button")}
             <span className="absolute right-[5px] inline-flex h-[50px] w-[50px] items-center justify-center rounded-[50%] bg-black">
               <Image
-                src="/icon-buttery-white-arrow-right.svg"
+                src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-buttery-white-arrow-right.svg`}
                 alt="icon-buttery-white-arrow-right"
                 width="34"
                 height="28"

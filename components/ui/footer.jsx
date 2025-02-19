@@ -26,7 +26,7 @@ export default function Footer({ settings }) {
               </h3>
               <div key={`icon-marquee-${index}`} className="h-10 min-w-[42px]">
                 <Image
-                  src="/shape-light-lime-5-arms-star.svg"
+                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/shape-light-lime-5-arms-star.svg`}
                   alt="shape-light-lime-5-arms-star"
                   width="74"
                   height="70"
@@ -50,7 +50,7 @@ export default function Footer({ settings }) {
                           <span>
                             {chunks}{" "}
                             <Image
-                              src="/shape-light-lime-5-arms-star.svg"
+                              src={`${process.env.NEXT_PUBLIC_SITE_URL}/shape-light-lime-5-arms-star.svg`}
                               width="74"
                               height="70"
                               alt="icon shape text"
@@ -96,14 +96,14 @@ export default function Footer({ settings }) {
                           className="group/link relative inline-flex h-[34px] w-[34px] items-center justify-center rounded-[50%] border border-secondary bg-black transition-all duration-300 hover:border-black hover:bg-primary hover:shadow-[0_1.5px_0_0] hover:shadow-secondary"
                         >
                           <Image
-                            src="/icon-logo-buttery-white-twitter.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-buttery-white-twitter.svg`}
                             alt="icon-logo-buttery-white-twitter"
                             width="19"
                             height="16"
                             className="opacity-100 transition-all duration-300 group-hover/link:opacity-0"
                           />
                           <Image
-                            src="/icon-logo-black-twitter.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-black-twitter.svg`}
                             alt="icon-logo-black-twitter"
                             width="19"
                             height="16"
@@ -117,14 +117,14 @@ export default function Footer({ settings }) {
                           className="group/link relative inline-flex h-[34px] w-[34px] items-center justify-center rounded-[50%] border border-secondary bg-black transition-all duration-300 hover:border-black hover:bg-primary hover:shadow-[0_1.5px_0_0] hover:shadow-secondary"
                         >
                           <Image
-                            src="/icon-logo-buttery-white-facebook.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-buttery-white-facebook.svg`}
                             alt="icon-logo-buttery-white-facebook"
                             width="10"
                             height="17"
                             className="opacity-100 transition-all duration-300 group-hover/link:opacity-0"
                           />
                           <Image
-                            src="/icon-logo-black-facebook.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-black-facebook.svg`}
                             alt="icon-logo-black-facebook"
                             width="10"
                             height="17"
@@ -138,14 +138,14 @@ export default function Footer({ settings }) {
                           className="group/link relative inline-flex h-[34px] w-[34px] items-center justify-center rounded-[50%] border border-secondary bg-black transition-all duration-300 hover:border-black hover:bg-primary hover:shadow-[0_1.5px_0_0] hover:shadow-secondary"
                         >
                           <Image
-                            src="/icon-logo-buttery-white-instagram.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-buttery-white-instagram.svg`}
                             alt="icon-logo-buttery-white-instagram"
                             width="17"
                             height="18"
                             className="opacity-100 transition-all duration-300 group-hover/link:opacity-0"
                           />
                           <Image
-                            src="/icon-logo-black-instagram.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-black-instagram.svg`}
                             alt="icon-logo-black-instagram"
                             width="17"
                             height="18"
@@ -159,14 +159,14 @@ export default function Footer({ settings }) {
                           className="group/link relative inline-flex h-[34px] w-[34px] items-center justify-center rounded-[50%] border border-secondary bg-black transition-all duration-300 hover:border-black hover:bg-primary hover:shadow-[0_1.5px_0_0] hover:shadow-secondary"
                         >
                           <Image
-                            src="/icon-logo-buttery-white-linkedin.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-buttery-white-linkedin.svg`}
                             alt="icon-logo-buttery-white-linkedin"
                             width="17"
                             height="18"
                             className="opacity-100 transition-all duration-300 group-hover/link:opacity-0"
                           />
                           <Image
-                            src="/icon-logo-black-linkedin.svg"
+                            src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-logo-black-linkedin.svg`}
                             alt="icon-logo-black-linkedin"
                             width="17"
                             height="18"
@@ -177,7 +177,7 @@ export default function Footer({ settings }) {
                     </div>
                     <div className="hidden lg:inline-block">
                       <Image
-                        src="/element-light-lime-curve-arrow.svg"
+                        src={`${process.env.NEXT_PUBLIC_SITE_URL}/element-light-lime-curve-arrow.svg`}
                         alt="element-light-lime-curve-arrow"
                         width="284"
                         height="153"

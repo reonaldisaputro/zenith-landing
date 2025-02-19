@@ -16,7 +16,7 @@ export default function Hero() {
                   <span className="inline-flex items-center gap-5">
                     {chunks}
                     <Image
-                      src="/shape-light-lime-5-arms-star.svg"
+                      src={`${process.env.NEXT_PUBLIC_SITE_URL}/shape-light-lime-5-arms-star.svg`}
                       alt="shape-light-lime-5-arms-star"
                       width="74"
                       height="70"
@@ -32,21 +32,21 @@ export default function Hero() {
             <div className="mb-14 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
               <div className="flex -space-x-3">
                 <Image
-                  src="/hero-user.png"
+                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/hero-user.png`}
                   alt="hero-user-1"
                   width="60"
                   height="60"
                   className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
                 />
                 <Image
-                  src="/hero-user.png"
+                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/hero-user.png`}
                   alt="hero-user-1"
                   width="60"
                   height="60"
                   className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
                 />
                 <Image
-                  src="/hero-user.png"
+                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/hero-user.png`}
                   alt="hero-user-1"
                   width="60"
                   height="60"
@@ -59,7 +59,7 @@ export default function Hero() {
               {t("button")}
               <span className="absolute right-[5px] inline-flex h-[50px] w-[50px] items-center justify-center rounded-[50%] bg-black">
                 <Image
-                  src="/icon-buttery-white-phone.svg"
+                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-buttery-white-phone.svg"`}
                   alt="icon-buttery-white-phone"
                   width="30"
                   height="30"
@@ -76,7 +76,7 @@ export default function Hero() {
             />
           </div>
           <Image
-            src="/element-light-lime-curve-arrow.svg"
+            src={`${process.env.NEXT_PUBLIC_SITE_URL}/element-light-lime-curve-arrow.svg`}
             alt="element-light-lime-curve-arrow"
             width="284"
             height="153"
