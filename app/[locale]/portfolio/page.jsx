@@ -7,7 +7,7 @@ export default function Portfolio() {
         {/* Card 1 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <Image
-            src="/img-1.png"
+            src="https://staging-mifta-digital.my.id/img-1.png"
             alt="Project Image"
             width={500}
             height={300}
