@@ -7,7 +7,7 @@ export default function Portfolio() {
         {/* Card 1 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <Image
-            src="https://staging-mifta-digital.my.id/img-1.png"
+            src={`${process.env.NEXT_PUBLIC_SITE_URL}/img-1.png`}
             alt="Project Image"
             width={500}
             height={300}
@@ -42,7 +42,7 @@ export default function Portfolio() {
             </a>
           </div>
           <Image
-            src="/img-2.png"
+            src={`${process.env.NEXT_PUBLIC_SITE_URL}/img-2.png`}
             alt="Project Image"
             width={500}
             height={300}
@@ -53,7 +53,7 @@ export default function Portfolio() {
         {/* Card 3 */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           <Image
-            src="/img-1.png"
+            src={`${process.env.NEXT_PUBLIC_SITE_URL}/img-1.png`}
             alt="Project Image"
             width={500}
             height={300}
