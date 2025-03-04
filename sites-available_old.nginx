@@ -1,0 +1,53 @@
+server {
+    server_name staging-mifta-digital.my.id;
+
+    index index.html;
+    root /var/www/staging-mifta-digital;
+
+    location /_next/static {
+        alias /var/www/staging-mifta-digital/.next/static;
+        add_header Cache-Control "public, max-age=3600, immutable";
+    }
+
+    location @public {
+        root /var/www/staging-mifta-digital;
+        add_header Cache-Control "public, max-age=3600, immutable";
+    }
+
+
+    # Serve images and assets from /public/ directly
+    location ~* \.(?:ico|css|js|gif|jpe?g|png|svg|woff2?|eot|ttf|otf|mp4|webm|webp|avif|json|xml|txt)$ {
+        root /var/www/staging-mifta-digital/public;
+        access_log off;
+        expires max;
+        add_header Cache-Control "public, max-age=31536000, immutable";
+    }
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';    proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/staging-mifta-digital.my.id/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/staging-mifta-digital.my.id/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+    if ($host = staging-mifta-digital.my.id) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+    listen 80;
+    server_name staging-mifta-digital.my.id;
+    return 404; # managed by Certbot
+
+}
