@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import LangSwitcher from "@/components/ui/lang-switcher";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -12,7 +13,13 @@ export default function Navbar() {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-secondary font-bold text-2xl">
-            Mifta Digital Solution
+            <Image
+              src="/logo-mds.png"
+              alt="icon-buttery-white-phone"
+              width="160"
+              height="65"
+              className="mt-3"
+            />
           </Link>
           <nav className="flex items-center gap-6">
             <Link

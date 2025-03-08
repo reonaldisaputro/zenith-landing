@@ -44,7 +44,7 @@ export default function About({ settings }) {
       return "/about-img.jpg";
     const url = new URL(settings.video_url);
     if (settings.video_url.startsWith("https://www.youtube.com/embed")) {
-      const idVideo = url.pathname.replace("/embed/", '');
+      const idVideo = url.pathname.replace("/embed/", "");
       return `https://img.youtube.com/vi/${idVideo}/maxresdefault.jpg`;
     }
     if (settings.video_url.includes("/watch")) {
