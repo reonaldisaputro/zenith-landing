@@ -32,21 +32,28 @@ export default function Hero() {
             <div className="mb-14 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
               <div className="flex -space-x-3">
                 <Image
-                  src="/hero-user.png"
+                  src="/hero-user-1.png"
                   alt="hero-user-1"
                   width="60"
                   height="60"
                   className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
                 />
                 <Image
-                  src="/hero-user.png"
+                  src="/hero-user-2.png"
                   alt="hero-user-1"
                   width="60"
                   height="60"
                   className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
                 />
                 <Image
-                  src="/hero-user.png"
+                  src="/hero-user-3.png"
+                  alt="hero-user-1"
+                  width="60"
+                  height="60"
+                  className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
+                />
+                <Image
+                  src="/hero-user-4.png"
                   alt="hero-user-1"
                   width="60"
                   height="60"

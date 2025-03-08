@@ -14,20 +14,20 @@
       "title": "We provide software development <wrapper>solutions</wrapper>",
       "content": {
         "item_1": {
-          "title": "UI/UX Design",
-          "description": "Focusing on user interface (UI) and user experience (UX) design to enhance the usability and accessibility of digital products & app."
+          "title": "Mobile Apps",
+          "description": "Developing mobile applications that enhance user experience, streamline functionality, and provide engaging features for users on the go."
         },
         "item_2": {
-          "title": "Graphic Design",
-          "description": "Creating visual elements such as logos, branding materials, page layout techniques, brochures, & other marketing collateral."
+          "title": "Web Development",
+          "description": "Creating and building websites that are visually engaging, easy to navigate, and fully functional is essential for effective web development."
         },
         "item_3": {
-          "title": "Mobile Apps & Web Design",
-          "description": "Designing and developing mobile apps and web to ensure they are visually look and appealing, user-friendly, and functional your apps."
+          "title": "UI/UX Design",
+          "description": "Focusing on user interface (UI) and user experience (UX) designto enhance the usability and accessibility of digital products & app."
         },
         "item_4": {
-          "title": "Motion Graphics",
-          "description": "Creating animated graphics, videos for various purposes, including marketing and entertainment. To help sell a product or service."
+          "title": "Software Design",
+          "description": "Designing software that creates animated graphics and videos for diverse applications, such as marketing and entertainment, to effectively promote products or services."
         }
       }
     },

@@ -14,15 +14,15 @@ export default function About({ settings }) {
   const t = useTranslations("HomePage.About");
   const abouts = [
     {
-      title: "15+",
+      title: "4+",
       description: t("content.experience"),
     },
     {
-      title: "84k",
+      title: "10+",
       description: t("content.project"),
     },
     {
-      title: "70%",
+      title: "85%",
       description: t("content.satisfaction"),
     },
   ];
