@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="section-hero bg-black pb-20 pt-[80px] text-secondary">
       <div className="container">
-        <div className="relative z-10 grid items-center justify-center gap-x-[90px] gap-y-16 grid-cols-[1fr_minmax(0,0.6fr)]">
+        <div className="relative z-10 grid items-center justify-center gap-x-[90px] gap-y-16 lg:grid-cols-[1fr_minmax(0,0.6fr)] grid-cols-1">
           <div className="text-secondary text-center lg:text-start">
             <h1>
               {t.rich("title", {
@@ -55,19 +55,22 @@ export default function Hero() {
               </div>
               <span className="font-semibold">{t("caption")}</span>
             </div>
-            <Button size="lg" className="relative pr-20 lg:pr-[118px]">
-              {t("button")}
-              <span className="absolute right-[5px] inline-flex h-[50px] w-[50px] items-center justify-center rounded-[50%] bg-black">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-buttery-white-phone.svg"`}
-                  alt="icon-buttery-white-phone"
-                  width="30"
-                  height="30"
-                />
-              </span>
-            </Button>
+            <div className="flex justify-center lg:justify-start">
+              <Button size="lg" className="flex items-center justify-between gap-3 px-6 py-3 md:px-8 group">
+                <span>{t("button")}</span>
+                <span className="inline-flex h-10 w-10 md:h-[50px] md:w-[50px] items-center justify-center rounded-full bg-black group-hover:bg-[#BBFF4D] transition-colors">
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-buttery-white-phone.svg"`}
+                    alt="icon-buttery-white-phone"
+                    width="30"
+                    height="30"
+                    className="w-5 h-5 md:w-6 md:h-6"
+                  />
+                </span>
+              </Button>
+            </div>
           </div>
-          <div className="border-4 border-secondary rounded-3xl overflow-hidden">
+          <div className="border-4 border-secondary rounded-3xl overflow-hidden hidden lg:block">
             <Image
               src={"/hero-img.jpg"}
               width={485}

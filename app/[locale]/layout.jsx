@@ -18,10 +18,6 @@ const syne = Syne({
   display: "swap",
 });
 
-// export const metadata = {
-//   title: "Zenith",
-//   description: "A website dev agency",
-// };
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -47,8 +43,6 @@ export default async function RootLayout({ children, params }) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   const settings = await getSettings();

@@ -18,7 +18,7 @@ const nextConfig = {
         pathname: "/vi/**",
       },
     ],
-domains: ["img.youtube.com"],
+domains: ["img.youtube.com", "localhost"],
   },
  experimental: {
     metadataBase: new URL("https://staging-mifta-digital.my.id"),
