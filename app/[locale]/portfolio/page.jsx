@@ -117,7 +117,6 @@ export default function Portfolio() {
     }
 
     fetchPortfolios();
-    console.log(portfolioItems, "data");
   }, [activeFilter]);
 
   const filteredItems =
@@ -183,7 +182,11 @@ export default function Portfolio() {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredItems.map((item) => (
-            <Link href={item.uiProject} key={item.id} className="flex">
+            <Link
+              href={`/en/portfolio/${item.id}`}
+              key={item.id}
+              className="flex"
+            >
               <div className="bg-white rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow flex flex-col w-full">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                   <Image
