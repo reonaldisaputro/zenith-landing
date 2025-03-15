@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,7 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     // Prevent scrolling when menu is open
-    document.body.style.overflow = !isMenuOpen ? 'hidden' : 'unset';
+    document.body.style.overflow = !isMenuOpen ? "hidden" : "unset";
   };
 
   return (
@@ -22,20 +22,28 @@ export default function Navbar() {
       <div className="container px-4 md:px-6">
         <div className="flex items-center justify-between py-2">
           <Link href={"/"}>
-            <Image src={"/logo.png"} width={150} height={150} alt="Company Logo" />
+            <Image
+              src={"/logo.png"}
+              width={150}
+              height={150}
+              alt="Company Logo"
+            />
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
-            <Link href={"/id/portfolio"} className="text-secondary hover:text-[#BBFF4D] transition-colors">
+            <Link
+              href={"/id/portfolio"}
+              className="text-secondary hover:text-[#BBFF4D] transition-colors"
+            >
               Our Portfolio
             </Link>
             <LangSwitcher />
-            <Button>{t("contact")}</Button>
+            {/* <Button>{t("contact")}</Button> */}
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden text-secondary p-2"
             onClick={toggleMenu}
             aria-label="Toggle menu"
@@ -50,14 +58,17 @@ export default function Navbar() {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" onClick={toggleMenu}>
-            <div 
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+            onClick={toggleMenu}
+          >
+            <div
               className="absolute right-0 top-0 h-screen w-[250px] bg-black border-l border-gray-800 p-6"
-              onClick={e => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col gap-6">
-                <Link 
-                  href={"/portfolio"} 
+                <Link
+                  href={"/portfolio"}
                   className="text-secondary hover:text-[#BBFF4D] transition-colors text-lg"
                   onClick={toggleMenu}
                 >

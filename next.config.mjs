@@ -4,10 +4,10 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: "standalone",
   images: {
     remotePatterns: [
-{
+      {
         protocol: "https",
         hostname: "staging-mifta-digital.my.id",
       },
@@ -17,10 +17,14 @@ const nextConfig = {
         port: "",
         pathname: "/vi/**",
       },
+      {
+        protocol: "https",
+        hostname: "forvideo.my.id",
+      },
     ],
-domains: ["img.youtube.com", "localhost"],
+    domains: ["img.youtube.com", "localhost", "forvideo.my.id"],
   },
- experimental: {
+  experimental: {
     metadataBase: new URL("https://staging-mifta-digital.my.id"),
   },
 };
