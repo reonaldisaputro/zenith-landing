@@ -16,7 +16,7 @@ export default function Hero() {
                   <span className="inline-flex items-center gap-5">
                     {chunks}
                     <Image
-                      src={`${process.env.NEXT_PUBLIC_SITE_URL}/shape-light-lime-5-arms-star.svg`}
+                      src="/shape-light-lime-5-arms-star.svg"
                       alt="shape-light-lime-5-arms-star"
                       width="74"
                       height="70"
@@ -89,7 +89,7 @@ export default function Hero() {
             />
           </div>
           <Image
-            src={`${process.env.NEXT_PUBLIC_SITE_URL}/element-light-lime-curve-arrow.svg`}
+            src="/publicshape-light-lime-5-arms-star.svg"
             alt="element-light-lime-curve-arrow"
             width="284"
             height="153"

@@ -65,7 +65,7 @@ export default function About({ settings }) {
                     <span>
                       {chunks}{" "}
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_SITE_URL}/shape-light-lime-5-arms-star.svg`}
+                        src="shape-light-lime-5-arms-star.svg"
                         alt="shape-light-lime-5-arms-star"
                         width="74"
                         height="70"
@@ -81,7 +81,7 @@ export default function About({ settings }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[0.8fr_0.4fr] gap-6">
             <div className="flex items-center justify-center overflow-hidden rounded-3xl border-4 border-black relative">
               <Image
-                src={getThumbnailYoutube()}
+                src="/thumbnail.png"
                 alt="about-img"
                 width={846}
                 height={476}

@@ -91,7 +91,7 @@ export default function PortfolioDetail({ params }) {
     async function fetchPortfolio() {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolios/${id}`
+          `https://forvideo.my.id/api/portfolios/${id}`
         );
         const result = await response.json();
         if (result.success) {
@@ -160,7 +160,12 @@ export default function PortfolioDetail({ params }) {
                   {projectInfo.url_project}
                 </a>
               </div>
-              <button className="bg-white text-black px-6 py-2 rounded-full mt-4">
+              <button
+                className="bg-white text-black px-6 py-2 rounded-full mt-4"
+                onClick={() =>
+                  window.open(`${projectInfo.url_project}`, "_blank")
+                }
+              >
                 Visit Web
               </button>
             </div>

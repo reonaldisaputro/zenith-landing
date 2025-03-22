@@ -46,7 +46,7 @@ export default function Process() {
                     <span>
                       {chunks}{" "}
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_SITE_URL}/shape-light-lime-5-arms-star.svg`}
+                        src="/shape-light-lime-5-arms-star.svg"
                         alt="shape-light-lime-5-arms-star"
                         width="74"
                         height="70"

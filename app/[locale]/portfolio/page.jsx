@@ -68,8 +68,10 @@ import { useEffect, useState } from "react";
 // ];
 
 export default function Portfolio() {
-  const [portfolioItems, setPortofolioItems] = useState([]);
+  const [portfolioItems, setPortfolioItems] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
   const filters = ["All", "Website", "Mobile app", "Design"];
 
   useEffect(() => {
@@ -85,7 +87,7 @@ export default function Portfolio() {
             : "design";
 
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/portfolios?type=${categoryType}`,
+          `https://forvideo.my.id/api/portfolios?type=${categoryType}&per_page=10&page=${currentPage}`,
           {
             method: "GET",
             headers: {
@@ -96,9 +98,9 @@ export default function Portfolio() {
 
         const result = await response.json();
 
-        if (result.success && result.data.data) {
+        if (result.success) {
           // Transform API data to match the required format
-          const formattedData = result.data.data.map((item) => ({
+          const formattedData = result.data.map((item) => ({
             id: item.id,
             title: item.title_en || item.title_id,
             category: item.type === "web" ? "Website" : "Mobile app",
@@ -109,7 +111,8 @@ export default function Portfolio() {
             description: item.short_desc_en || item.short_desc_id,
           }));
 
-          setPortofolioItems(formattedData);
+          setPortfolioItems(formattedData);
+          setTotalPages(result.data.last_page);
         }
       } catch (error) {
         console.log("Error fetching portfolio:", error);
@@ -118,6 +121,10 @@ export default function Portfolio() {
 
     fetchPortfolios();
   }, [activeFilter]);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   const filteredItems =
     activeFilter === "All"
@@ -134,7 +141,7 @@ export default function Portfolio() {
               I&apos;m a human-focused Product Designer with 3+ years of
               experience
             </h1>
-            <p className="text-2xl mb-8">--it&apos;s lovely to e-meet you.</p>
+            {/* <p className="text-2xl mb-8">--it&apos;s lovely to e-meet you.</p>
             <div className="space-y-2 text-gray-300">
               <p>
                 I&apos;m Claire Squire, currently fleshing out an 8-product
@@ -149,7 +156,7 @@ export default function Portfolio() {
                 Product Designer at the University of Notre Dame while pursuing
                 my BA (2020)
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -157,10 +164,10 @@ export default function Portfolio() {
       <main className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-center mb-8">Portofolio</h2>
 
-        <p className="text-center text-gray-600 mb-8">
+        {/* <p className="text-center text-gray-600 mb-8">
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur.
-        </p>
+        </p> */}
 
         {/* Filter Buttons */}
         <div className="flex justify-center gap-4 mb-12">
@@ -181,48 +188,67 @@ export default function Portfolio() {
 
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item) => (
-            <Link
-              href={`/en/portfolio/${item.id}`}
-              key={item.id}
-              className="flex"
-            >
-              <div className="bg-white rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow flex flex-col w-full">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover"
-                  />
+          {filteredItems.length === 0 ? (
+            <p className="text-gray-500 text-center col-span-full">
+              Tidak ada portofolio yang ditemukan.
+            </p>
+          ) : (
+            filteredItems.map((item) => (
+              <Link
+                href={`/en/portfolio/${item.id}`}
+                key={item.id}
+                className="flex"
+              >
+                <div className="bg-white rounded-3xl p-4 shadow-lg hover:shadow-xl transition-shadow flex flex-col w-full">
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-col flex-grow mt-4">
+                    <h3 className="text-xl font-semibold">{item.title}</h3>
+                    <p className="text-gray-600 mt-2 line-clamp-3">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col flex-grow mt-4">
-                  <h3 className="text-xl font-semibold">{item.title}</h3>
-                  <p className="text-gray-600 mt-2 line-clamp-3">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))
+          )}
         </div>
 
         {/* Pagination */}
         <div className="flex justify-center gap-2 mt-12">
-          <button className="w-8 h-8 flex items-center justify-center rounded-full border border-gray-300">
+          <button
+            className="w-8 h-8 flex items-center justify-center rounded-full border border-gray-300"
+            disabled={currentPage === 1}
+            onClick={() => handlePageChange(currentPage - 1)}
+          >
             &lt;
           </button>
-          {[1, 2, 3, 4, 5].map((page) => (
-            <button
-              key={page}
-              className={`w-8 h-8 flex items-center justify-center rounded-full ${
-                page === 1 ? "bg-[#BBFF4D]" : "border border-gray-300"
-              }`}
-            >
-              {page}
-            </button>
-          ))}
-          <button className="w-8 h-8 flex items-center justify-center rounded-full border border-gray-300">
+          {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+            (page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`w-8 h-8 flex items-center justify-center rounded-full ${
+                  currentPage === page
+                    ? "bg-[#BBFF4D] text-black"
+                    : "border border-gray-300"
+                }`}
+              >
+                {page}
+              </button>
+            )
+          )}
+          <button
+            className="w-8 h-8 flex items-center justify-center rounded-full border border-gray-300"
+            disabled={currentPage === totalPages}
+            onClick={() => handlePageChange(currentPage + 1)}
+          >
             &gt;
           </button>
         </div>

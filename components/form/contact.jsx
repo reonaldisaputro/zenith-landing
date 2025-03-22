@@ -171,7 +171,7 @@ export default function ContactForm({ baseUrl }) {
             {t("form.button")}
             <span className="absolute right-[5px] inline-flex h-[50px] w-[50px] items-center justify-center rounded-[50%] bg-black">
               <Image
-                src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-buttery-white-arrow-right.svg`}
+                src="/icon-buttery-white-arrow-right.svg"
                 alt="icon-buttery-white-arrow-right"
                 width="34"
                 height="28"
