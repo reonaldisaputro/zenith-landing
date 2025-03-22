@@ -19,14 +19,15 @@ export default function Navbar() {
 
   return (
     <header className="section-header bg-black sticky top-0 left-0 right-0 z-30 py-3">
-      <div className="container px-4 md:px-6">
-        <div className="flex items-center justify-between py-2">
-          <Link href={"/"}>
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="text-secondary font-bold text-2xl">
             <Image
-              src={"/logo.png"}
-              width={150}
-              height={150}
-              alt="Company Logo"
+              src="/logo-mds.png"
+              alt="icon-buttery-white-phone"
+              width="160"
+              height="65"
+              className="mt-3"
             />
           </Link>
 

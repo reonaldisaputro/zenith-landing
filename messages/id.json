@@ -13,20 +13,20 @@
       "title": "Kami tawarkan beragam <wrapper>solusi</wrapper>",
       "content": {
         "item_1": {
+          "title": "Aplikasi Mobile",
+          "description": "Mengembangkan aplikasi mobile yang meningkatkan pengalaman pengguna, menyederhanakan fungsionalitas, dan menyediakan fitur menarik bagi pengguna."
+        },
+        "item_2": {
+          "title": "Pengembangan Web",
+          "description": "Membuat dan membangun situs web yang menarik secara visual, mudah dinavigasi, dan berfungsi penuh sangat penting untuk pengembangan web yang efektif."
+        },
+        "item_3": {
           "title": "Desain UI/UX",
           "description": "Berfokus pada desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) untuk meningkatkan kegunaan dan aksesibilitas produk digital dan aplikasi."
         },
-        "item_2": {
-          "title": "Desain Grafis",
-          "description": "Membuat elemen visual seperti logo, materi branding, teknik tata letak halaman, brosur, dan materi pemasaran lainnya."
-        },
-        "item_3": {
-          "title": "Desain Website",
-          "description": "Merancang dan mengembangkan website untuk memastikan tampilannya menarik, ramah pengguna, dan fungsional."
-        },
         "item_4": {
-          "title": "Motion Graphics",
-          "description": "Membuat grafik animasi, video untuk berbagai keperluan termasuk pemasaran dan hiburan, untuk membantu menjual produk atau layanan."
+          "title": "Desain Software",
+          "description": "Merancang perangkat lunak yang membuat grafik dan video animasi untuk berbagai aplikasi, seperti pemasaran dan hiburan, untuk mempromosikan produk atau layanan secara efektif."
         }
       }
     },

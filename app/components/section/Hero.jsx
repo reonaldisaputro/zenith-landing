@@ -32,21 +32,28 @@ export default function Hero() {
             <div className="mb-14 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
               <div className="flex -space-x-3">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/hero-user.png`}
+                  src="/hero-user-1.png"
                   alt="hero-user-1"
                   width="60"
                   height="60"
                   className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
                 />
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/hero-user.png`}
+                  src="/hero-user-2.png"
                   alt="hero-user-1"
                   width="60"
                   height="60"
                   className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
                 />
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_SITE_URL}/hero-user.png`}
+                  src="/hero-user-3.png"
+                  alt="hero-user-1"
+                  width="60"
+                  height="60"
+                  className="z-0 h-[66px] w-[66px] rounded-[50%] border-[6px] border-black"
+                />
+                <Image
+                  src="/hero-user-4.png"
                   alt="hero-user-1"
                   width="60"
                   height="60"
@@ -56,7 +63,10 @@ export default function Hero() {
               <span className="font-semibold">{t("caption")}</span>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <Button size="lg" className="flex items-center justify-between gap-3 px-6 py-3 md:px-8 group">
+              <Button
+                size="lg"
+                className="flex items-center justify-between gap-3 px-6 py-3 md:px-8 group"
+              >
                 <span>{t("button")}</span>
                 <span className="inline-flex h-10 w-10 md:h-[50px] md:w-[50px] items-center justify-center rounded-full bg-black group-hover:bg-[#BBFF4D] transition-colors">
                   <Image
