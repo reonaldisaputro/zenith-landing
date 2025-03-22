@@ -70,7 +70,7 @@ export default function Hero() {
                 <span>{t("button")}</span>
                 <span className="inline-flex h-10 w-10 md:h-[50px] md:w-[50px] items-center justify-center rounded-full bg-black group-hover:bg-[#BBFF4D] transition-colors">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_SITE_URL}/icon-buttery-white-phone.svg"`}
+                    src="/icon-buttery-white-phone.svg"
                     alt="icon-buttery-white-phone"
                     width="30"
                     height="30"
