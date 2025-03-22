@@ -89,7 +89,7 @@ export default function Hero() {
             />
           </div>
           <Image
-            src="/publicshape-light-lime-5-arms-star.svg"
+            src="/shape-light-lime-5-arms-star.svg"
             alt="element-light-lime-curve-arrow"
             width="284"
             height="153"
