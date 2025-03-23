@@ -170,7 +170,7 @@ export default function Portfolio() {
         </p> */}
 
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex justify-center flex-wrap gap-4 mb-12">
           {filters.map((filter) => (
             <button
               key={filter}
