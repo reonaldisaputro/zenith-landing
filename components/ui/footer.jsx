@@ -10,9 +10,7 @@ export default function Footer({ settings }) {
   const marqueeText = Array.from({ length: 5 }, () => ({
     text: t("marquee"),
   }));
-  const formattedNumber = settings?.phone_number
-    .replace("+", "")
-    .replace("-", "");
+  const formattedNumber = settings?.phone_number.replace(/[^\d]/g, "");
 
   const baseUrl = process.env.API_BASE_URL;
   return (
@@ -70,7 +68,9 @@ export default function Footer({ settings }) {
                             {t("contact.telephone")}
                           </span>
                           <a
-                            href={`tel:+${formattedNumber}`}
+                            // href={`tel:+${formattedNumber}`}
+                            href={`https://wa.me/${formattedNumber}`}
+                            target="_blank"
                             className="text-secondary text-[21px] leading-[1.42]"
                           >
                             {settings?.phone_number}
@@ -186,16 +186,16 @@ export default function Footer({ settings }) {
                     </div>
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <ContactForm baseUrl={baseUrl} />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           <div className="container py-9">
             <div className="flex justify-between text-secondary">
               <Link href={"/"} className="font-bold text-2xl">
-                Mifta Digital Solution
+                Mifta Digital Solusi
               </Link>
               <p>{t("copyright")}</p>
             </div>

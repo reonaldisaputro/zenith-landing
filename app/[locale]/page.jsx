@@ -14,7 +14,7 @@ export default async function Home() {
   const settings = await getSettings();
   return (
     <>
-      <Hero />
+      <Hero settings={settings?.data || {}} />
       <Service />
       <div className="container">
         <hr />

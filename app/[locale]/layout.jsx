@@ -21,7 +21,7 @@ const syne = Syne({
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   return {
-    metadataBase: new URL("https://staging-mifta-digital.my.id"),
+    metadataBase: new URL("https://miftadigital.com"),
     title: "Mifta Digital Solution",
     description:
       locale === "en" ? "A software dev agency" : "Agen software terbaik",

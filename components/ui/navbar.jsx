@@ -34,10 +34,10 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
             <Link
-              href={"/id/portfolio"}
+              href={"/en/portfolio"}
               className="text-secondary hover:text-[#BBFF4D] transition-colors"
             >
-              Our Portfolio
+              {t("portfolio")}
             </Link>
             <LangSwitcher />
             {/* <Button>{t("contact")}</Button> */}
@@ -69,11 +69,11 @@ export default function Navbar() {
             >
               <div className="flex flex-col gap-6">
                 <Link
-                  href={"/portfolio"}
+                  href={"/en/portfolio"}
                   className="text-secondary hover:text-[#BBFF4D] transition-colors text-lg"
                   onClick={toggleMenu}
                 >
-                  Our Portfolio
+                  {t("portfolio")}
                 </Link>
                 <div className="py-2">
                   <LangSwitcher />

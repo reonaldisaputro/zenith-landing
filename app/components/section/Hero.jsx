@@ -1,9 +1,12 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
-export default function Hero() {
+export default function Hero({ settings }) {
+  const formattedNumber = settings?.phone_number.replace(/[^\d]/g, "");
+
   const t = useTranslations("HomePage.Hero");
   return (
     <section className="section-hero bg-black pb-20 pt-[80px] text-secondary">
@@ -66,6 +69,9 @@ export default function Hero() {
               <Button
                 size="lg"
                 className="flex items-center justify-between gap-3 px-6 py-3 md:px-8 group"
+                onClick={() =>
+                  window.open(`https://wa.me/${formattedNumber}`, "_blank")
+                }
               >
                 <span>{t("button")}</span>
                 <span className="inline-flex h-10 w-10 md:h-[50px] md:w-[50px] items-center justify-center rounded-full bg-black group-hover:bg-[#BBFF4D] transition-colors">
